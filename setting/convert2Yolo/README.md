@@ -38,7 +38,7 @@ see [example.py](https://github.com/ssaru/convert2Yolo/blob/master/example.py)
    - it directory path. not file path
 
      ```bash
-     --img_path ./example/kitti/images/
+     --img_path ./example/coco/images/
      ```
 
 3. --label
@@ -48,17 +48,17 @@ see [example.py](https://github.com/ssaru/convert2Yolo/blob/master/example.py)
      (some datasets give label `*.json` or `*.csv` . this case use file path)
 
      ```bash
-     --label ./example/kitti/labels/
+     --label ./example/coco/labels/
      ```
 
      OR
 
      ```bash
-     --label ./example/kitti/labels/label.json
+     --label ./example/coco/labels/label.json
      
      or
      
-     --label ./example/kitti/labels/label.csv
+     --label ./example/coco/labels/label.csv
      ```
 
 4. --convert_output_path
@@ -90,7 +90,7 @@ see [example.py](https://github.com/ssaru/convert2Yolo/blob/master/example.py)
    - it is `*.names` file contain class name. refer [darknet `*.name` file](https://github.com/pjreddie/darknet/blob/master/data/voc.names)
 
      ```bash
-     --cls_list_file voc.names
+     --cls_list_file coco.names
      ```
 
 ​    
@@ -132,7 +132,7 @@ tvmonitor
 python3 example.py --datasets [COCO/VOC/KITTI/UDACITY] --img_path <image_path> --label <label path or annotation file> --convert_output_path <output path> --img_type [".jpg" / ".png"] --manifest_path <output manipast file path> --cls_list_file <*.names file path>
 
 >>
-ex) python3 example.py --datasets KITTI --img_path ./example/kitti/images/ --label ./example/kitti/labels/ --convert_output_path ./ --img_type ".jpg" --manifest_path ./ --cls_list_file names.txt
+ex) python3 example.py --datasets COCO --img_path ./example/coco/images/ --label ./example/coco/labels/ --convert_output_path ./ --img_type ".jpg" --manifest_path ./ --cls_list_file names.txt
 ```
 
 ​    
